@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { withTranslation, Link } from '../../i18n';
+import { withTranslation, Link } from '../../i18n'
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 const Post = ({ t }) => (
   <React.Fragment>
@@ -16,13 +16,13 @@ const Post = ({ t }) => (
     </main>
     <Footer />
   </React.Fragment>
-);
+)
 Post.getInitialProps = async () => ({
   namespacesRequired: ['second-page', 'footer'],
-});
+})
 
 Post.propTypes = {
   t: PropTypes.func.isRequired,
-};
+}
 
-export default withTranslation('second-page')(Post);
+export default withTranslation('second-page')(Post)
